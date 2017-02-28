@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Blog.Models.Post>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div>
+    <h3>Внимание новости</h3>
+    <table>
+        <tr class="header">
+            <td><p>Заголовок</p></td>
+            <td><p>Текст</p></td>
+            
+            <td></td>
+        </tr>
+        @foreach (Blog.Models.Post post in Model)
+        {
+            <tr>
+                <td><p>@post.Id</p></td>
+                <td><p>@post.PostText</p></td>
+                <td><p><img src="@post.ImageUrl"/></p></td>
+            </tr>
+            foreach (var comment in post.Comments)
+            {
+                <tr>
+                    <td>@comment.Text</td>
+                    <td><a href="/PostOperetions/DeleteComment?commentId=@comment.Id">Удалить комментарий</a></td>
+                </tr>
+            }
+
+            <tr>
+                <td>
+                    <form action="/PostOperetions/AddComment" method="get">
+                        <input id="names" name="commentText" type="text" value="" />
+                        <input type="submit" />
+                        <input id="names" style="visibility:hidden" name="postId" type="text" value="@post.Id" />
+                    </form>
+                </td>
+            </tr>
+        }
+    </table>
+</div>
