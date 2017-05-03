@@ -68,3 +68,4 @@ C:\Users\Андрей\Documents\Visual Studio 2015\Projects\Blog\Blog\obj\Debug\
 C:\Users\Андрей\documents\visual studio 2015\Projects\Blog\Blog\obj\Debug\Blog.Migrations.AddCommentsTable.resources
 C:\Users\Андрей\documents\visual studio 2015\Projects\Blog\Blog\obj\Debug\Blog.Migrations.AddCommentsTable1.resources
 C:\Users\Андрей\documents\visual studio 2015\Projects\Blog\Blog\obj\Debug\Blog.Migrations.AddBadWordsTable.resources
+C:\Users\Андрей\documents\visual studio 2015\Projects\Blog\Blog\obj\Debug\Blog.csprojResolveAssemblyReference.cache
